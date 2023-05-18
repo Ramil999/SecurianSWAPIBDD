@@ -1,0 +1,238 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-18T19:08:27.206Z",
+        "line": 13,
+        "name": "Retirement calculator tests",
+        "description": "",
+        "id": "securian-retirement-savings-verification;retirement-calculator-tests;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1239294100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10607892200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch the application",
+            "match": {
+              "location": "steps.SecurianSteps.user_user_launch_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5934714500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"retiredData\" to inputBox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"retiredData\"",
+                  "offset": 8
+                }
+              ],
+              "location": "steps.SecurianSteps.user_enters_to_quantity(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139953500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.SecurianSteps.user_user_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275724600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"calculate\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"calculate\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.SecurianSteps.user_user_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 832623000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I validate \"Result\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Result\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.SecurianSteps.user_user_validates_on_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SecurianAssignment"
+          }
+        ]
+      }
+    ],
+    "name": "Securian Retirement Savings Verification",
+    "description": "",
+    "id": "securian-retirement-savings-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/securian.feature",
+    "tags": [
+      {
+        "name": "@SecurianAssignment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-18T19:08:46.581Z",
+        "line": 14,
+        "name": "Verification of Users",
+        "description": "",
+        "id": "swapi-verification;verification-of-users;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 999500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25807000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I create request for \"SWAPI_SERVICE\" service with \"userInfo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SWAPI_SERVICE\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"userInfo\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.SwapiSteps.peopleEndpointIs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4446711300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I do get request to \"SWAPI_SERVICE\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SWAPI_SERVICE\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.SwapiSteps.doGetRequestToService(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29999500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate \"User\" personal details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SwapiSteps.storePersonalDetailsOfUser(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SWAPI"
+          }
+        ]
+      }
+    ],
+    "name": "SwAPI Verification",
+    "description": "",
+    "id": "swapi-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swapi.feature",
+    "tags": [
+      {
+        "name": "@SWAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
