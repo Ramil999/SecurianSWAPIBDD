@@ -29,6 +29,7 @@ public class SwapiValidation {
         Collections.sort(actualResult);
 
         for (int i = 0; i < actualResult.size(); i++) {
+            System.out.println("Expected Result: "+expectedResult.get(i) + " - Actual Result: "+actualResult.get(i));
             Assert.assertEquals(actualResult.get(i), expectedResult.get(i));
         }
     }

@@ -15,7 +15,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "steps",
         dryRun=false,
-        tags="@SWAPI or @SecurianAssignment"
+        tags="@UserPersonalInfo"
+        //@CalculateMonthlySaving or
 )
 class Runner extends AbstractTestNGCucumberTests {
 

@@ -1,4 +1,4 @@
-@SWAPI
+@UserPersonalInfo
 Feature: SwAPI Verification
 
 

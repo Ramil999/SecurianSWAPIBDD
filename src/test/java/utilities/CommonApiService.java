@@ -1,4 +1,5 @@
 package utilities;
+import io.restassured.internal.support.Prettifier;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
@@ -17,9 +18,18 @@ public class CommonApiService {
                     given()
                             .log().all()
                             .baseUri(ConfigurationReader.getProperty("swapiService"))
+                           // .pathParam("name","Luke Skywalker")
                             .when()
                             .get();
+
             response.prettyPeek();
+            //    response.prettyPrint();
+
+//            Prettifier prettifier = new Prettifier();
+//            String prettyResponseBody = prettifier.getPrettifiedBodyIfPossible(response, response.getBody());
+//            System.out.println(   prettyResponseBody.contains("Ramil"));
+           // System.out.println(prettyResponseBody);
+
             return response;
         }else{
             return null;
